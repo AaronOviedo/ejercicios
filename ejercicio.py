@@ -20,5 +20,17 @@ def sockMerchant(n, ar):
     print (n)
     out = ar.split(' ')
     print(out)
+    count_of_pops = 0
+    for key in range(n):
+        for key2 in range(n):
+            if key != key2:
+                if out[key] == out[key2]:
+                    # out.pop(key)
+                    count_of_pops += 1
+                    # n = n - 1
+                    print(count_of_pops)
+                    
+
+
 
 sockMerchant(9, '10 20 10 20 10 50 10 10')
